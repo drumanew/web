@@ -1,0 +1,80 @@
+body, p {
+  margin: 0;
+  padding: 0;
+}
+
+body { line-height: 1; }
+
+body {
+    background: #515151 url(http://learnyousomeerlang.com/static/img/splash-gradient.png) repeat-x top;
+}
+
+/* Wrap everything */
+#wrap {
+    margin: 0 auto;
+    padding-top: 80px;
+    position: relative;
+    text-align: left;
+    width: 800px;
+}
+
+#joe {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 180;
+    height: 122;
+}
+
+#book {
+    float: left;
+    width: 386;
+    height: 559;
+}
+
+#splash-desc {
+    color: #f3f3f3;
+    float: left;
+    font-family: arial, helvetica, arial, verdana, "trebuchet ms", sans;
+    font-size: 0.9em;
+    line-height: 1.2em;
+    margin: 60px 0 0 25px;
+    text-shadow: 1px 1px 1px #000;
+    width: 365px;
+}
+
+/* Offset behind paragraphs */
+#splash-desc p {
+    margin-bottom: 1em;
+}
+
+/* Default color for links */
+#splash-desc a {
+    color: #f3f3f3;
+}
+
+#buy {
+    background: url(http://learnyousomeerlang.com/static/img/splash-buy.png) no-repeat;
+    display: block;
+    float: left;
+    height: 70px;
+    width: 163px;
+}
+
+#read {
+    background: url(http://learnyousomeerlang.com/static/img/splash-read.png) no-repeat bottom right;
+    display: block;
+    float: left;
+    height: 70px;
+    width: 195px;
+}
+
+#read span,
+#buy span {
+    display: none;
+}
+
+#code {
+    float: right;
+    margin: 25px 10px 0 0;
+}
