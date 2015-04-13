@@ -1,0 +1,93 @@
+ul { list-style: none; }
+
+body {
+  background: #fff url("http://learnyousomeerlang.com/static/img/grass-top.jpg");
+  background-repeat: repeat-x;
+  background-position: 50% 0;
+}
+
+#wrapper {
+  margin: 0 auto;
+  max-width: 755px;
+}
+
+#header {
+  height: 200px;
+  background: url("http://learnyousomeerlang.com/static/img/main-title.png") no-repeat;
+  background-position: 55px 30px;
+}
+
+#header h1,
+#header span {
+  display: none;
+}
+
+#menu {
+  font-family: verdana, "trebuchet ms", helvetica, arial, sans, courrier;
+  font-size: 0.8em;
+  color: #aeaeae;
+  position: absolute;
+  top: 15px;
+  right: 15%;
+}
+
+#menu ul li {
+  display: inline;
+}
+#menu a {
+  text-decoration: none;
+  color: #aeaeae;
+}
+#menu a:hover {
+  color: #999;
+  text-decoration: underline;
+}
+
+#content {
+  margin-top: 45px;
+  padding-left: 50px;
+}
+/* Titles and subtitles */
+#content h2 {
+  margin-bottom: 5px;
+  font-family: Helvetica, Arial, sans;
+  font-weight: bold;
+  font-size: 2.6em;
+  letter-spacing: -0.05em;
+  color: #a7b774;
+}
+#content h3 {
+  height: 35px;
+  margin-left: -50px;
+  margin-bottom: 40px;
+  margin-top: 45px;
+  padding-left: 50px;
+  border-bottom: 1px solid #ddd;
+}
+#content h3 a {
+  text-decoration: none;
+  font-family: Helvetica, Arial, sans;
+  font-weight: bold;
+  font-size: 1.55em;
+  letter-spacing: -0.05em;
+  color: #8a8a8a;
+}
+#content h3:first-of-type {
+  margin-top: 0;
+}
+
+ul.toc {
+  list-style-type: disc;
+  list-style-position: inside;
+}
+ul.toc li {
+  margin-top: 1em;
+}
+
+ul.toc li a {
+  font-family: verdana, arial, helvetica, sans;
+  color: #333;
+}
+ul.toc li a:hover {
+  color: #666;
+}
