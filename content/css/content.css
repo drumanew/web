@@ -1,5 +1,3 @@
-ul { list-style: none; }
-
 body {
   background: #fff url("http://learnyousomeerlang.com/static/img/grass-top.jpg");
   background-repeat: repeat-x;
@@ -47,6 +45,7 @@ body {
   margin-top: 45px;
   padding-left: 50px;
 }
+
 /* Titles and subtitles */
 #content h2 {
   margin-bottom: 5px;
@@ -76,6 +75,17 @@ body {
   margin-top: 0;
 }
 
+#content img {
+  display: block;
+}
+
+#content img.left { float: left; }
+#content img.right { float: right; }
+#content img.center { display: block; margin: auto; }
+#content img.explanation { margin-bottom:1em; }
+
+
+
 ul.toc {
   list-style-type: disc;
   list-style-position: inside;
@@ -86,8 +96,42 @@ ul.toc li {
 
 ul.toc li a {
   font-family: verdana, arial, helvetica, sans;
-  color: #333;
+  color: #a7b774;
 }
 ul.toc li a:hover {
   color: #666;
 }
+
+ul.navigation {
+  margin-left: -50px;
+  padding-left: 50px;
+  margin-top: 20px; 
+  height: 50px;
+  border-bottom: 1px solid #ddd;
+}
+ul.navigation li {
+  float: left;
+  display: block;
+  width: 33%;
+  margin: 0 auto;
+  text-align: center;
+}
+ul.navigation a {
+  color: #a7b774;
+  font-family: helvetica, arial, sans;
+  text-decoration: underline;
+  font-weight: bold;
+  font-size: 1.4em;
+  text-decoration: underline;
+  letter-spacing: -0.05em;
+}
+
+ul.navigation a:hover {
+  color: #666;
+}
+
+#grass {
+  height: 54px;
+  background: url("http://learnyousomeerlang.com/static/img/grass-bottom.jpg") repeat-x;
+}
+
