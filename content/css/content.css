@@ -2,11 +2,13 @@ body {
   background: #fff url("http://learnyousomeerlang.com/static/img/grass-top.jpg");
   background-repeat: repeat-x;
   background-position: 50% 0;
+  margin: 0;
 }
 
 #wrapper {
   margin: 0 auto;
   max-width: 755px;
+  min-height: 1000px;
 }
 
 #header {
@@ -14,21 +16,20 @@ body {
   background: url("http://learnyousomeerlang.com/static/img/main-title.png") no-repeat;
   background-position: 55px 30px;
 }
-
 #header h1,
 #header span {
   display: none;
 }
 
+/* Menu */
 #menu {
-  font-family: verdana, "trebuchet ms", helvetica, arial, sans, courrier;
+  font-family: verdana;
   font-size: 0.8em;
   color: #aeaeae;
   position: absolute;
   top: 15px;
   right: 15%;
 }
-
 #menu ul li {
   display: inline;
 }
@@ -41,6 +42,7 @@ body {
   text-decoration: underline;
 }
 
+/* Content */
 #content {
   margin-top: 45px;
   padding-left: 50px;
@@ -49,7 +51,7 @@ body {
 /* Titles and subtitles */
 #content h2 {
   margin-bottom: 5px;
-  font-family: Helvetica, Arial, sans;
+  font-family: Arial;
   font-weight: bold;
   font-size: 2.6em;
   letter-spacing: -0.05em;
@@ -59,13 +61,12 @@ body {
   height: 35px;
   margin-left: -50px;
   margin-bottom: 40px;
-  margin-top: 45px;
   padding-left: 50px;
   border-bottom: 1px solid #ddd;
 }
 #content h3 a {
   text-decoration: none;
-  font-family: Helvetica, Arial, sans;
+  font-family: Arial;
   font-weight: bold;
   font-size: 1.55em;
   letter-spacing: -0.05em;
@@ -75,17 +76,91 @@ body {
   margin-top: 0;
 }
 
+/* Text */
+#content p {
+  font-family: verdana;
+  color: #565656;
+  font-size: 0.8em;
+  line-height: 1.4em;
+  margin-bottom: 1.4em;
+  padding-right: 50px;
+}
+#content p a {
+  color: #778744;
+}
+#content p a:hover {
+  color: #a7b774;
+}
+#content p code {
+  font-size: 1.1em;
+  font-family: monospace;
+  background: #efc;
+  border-bottom: 1px dotted #ad9;
+  color: #555;
+}
+
+/* Images */
 #content img {
   display: block;
 }
+#content img.left {
+  float: left;
+}
+#content img.right {
+  float: right;
+}
+#content div.note {
+  font-size: 18px;
+  border: 1px solid #e1e4ea;
+  margin: 10px;
+  padding: 2px 10px 2px 10px;
+  background: #eff3f8;
+}
 
-#content img.left { float: left; }
-#content img.right { float: right; }
-#content img.center { display: block; margin: auto; }
-#content img.explanation { margin-bottom:1em; }
+/* Table */
+#content table {
+  text-align: left;
+  margin: 10px;
+  padding: 5px;
+  border: 2px solid #B1C377;
+  border-radius: 15px;
+  border-spacing: 0;
+}
+#content table td {
+  width: 50%;
+}
+#content table tr td {
+  font-size: 14px;
+  font-family: verdana;
+  color: #8a8a8a;
+  padding: 5px;
+}
+#content table tr:nth-child(even) {
+    background-color: #eee;
+}
+#content table tr:nth-child(odd) {
+    background-color: #fff;
+}
+#content table tr td a {
+  text-decoration: none;
+  color: #a7b774;
+}
+#content table tr td a:hover {
+  text-decoration: underline;
+  color: #666;
+}
+
+/* Example code */
+#example_code {
+  background-color: #C4D7D6;
+  padding: 2px 10px 2px 10px;
+  font-family: "consolas", monospace;
+  font-style: italic;
+  font-size: 14px;
+}
 
 
-
+/* Inside */
 ul.toc {
   list-style-type: disc;
   list-style-position: inside;
@@ -93,19 +168,19 @@ ul.toc {
 ul.toc li {
   margin-top: 1em;
 }
-
 ul.toc li a {
-  font-family: verdana, arial, helvetica, sans;
+  font-family: verdana;
   color: #a7b774;
 }
 ul.toc li a:hover {
   color: #666;
 }
 
+/* Navigation */
 ul.navigation {
   margin-left: -50px;
   padding-left: 50px;
-  margin-top: 20px; 
+  margin-top: 20px;
   height: 50px;
   border-bottom: 1px solid #ddd;
 }
@@ -118,18 +193,18 @@ ul.navigation li {
 }
 ul.navigation a {
   color: #a7b774;
-  font-family: helvetica, arial, sans;
+  font-family: arial;
   text-decoration: underline;
   font-weight: bold;
   font-size: 1.4em;
   text-decoration: underline;
   letter-spacing: -0.05em;
 }
-
 ul.navigation a:hover {
   color: #666;
 }
 
+/* Bottom */
 #grass {
   height: 54px;
   background: url("http://learnyousomeerlang.com/static/img/grass-bottom.jpg") repeat-x;
