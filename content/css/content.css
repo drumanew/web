@@ -210,3 +210,31 @@ ul.navigation a:hover {
   background: url("http://learnyousomeerlang.com/static/img/grass-bottom.jpg") repeat-x;
 }
 
+/* Tip */
+#tip {
+  position: fixed;
+  left: -290px;
+  top: 220px;
+  min-height: 70px;
+  min-width: 300px;
+  max-width: 600px;
+  background-color: rgb(174,237,163);
+  background-image: url("../img/tip.png");
+  background-repeat: no-repeat;
+  background-position: right center;
+  border: 2px solid rgb(135,49,20);
+  border-radius: 15px;
+  padding-left: 25px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 5px;
+  font-family: verdana;
+  color: rgb(128,128,128);
+}
+#tip #code {
+  background-color: #C4D7D6;
+  padding: 2px 10px 2px 10px;
+  font-family: "consolas", monospace;
+  font-style: italic;
+  font-size: 14px;
+}
