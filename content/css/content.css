@@ -238,3 +238,17 @@ ul.navigation a:hover {
   font-style: italic;
   font-size: 14px;
 }
+
+/* Input code */
+#input_code {
+  width: 100%;
+}
+#input_code form textarea {
+  resize: none;
+  width: 100%;
+}
+
+/* Output code */
+#output_code {
+
+}
