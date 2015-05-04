@@ -10,7 +10,16 @@
   <script src="./js/tip.js"></script>
   <div id="tip" onmouseenter="enter()" onmouseleave="leave()"
        onclick="togle_active()">
-    <img src="./img/tip.png">
+  </div>
+  <script src="./js/code.js"></script>
+  <div id="trycode" onclick="expand()">
+    <p>Try your code now!</p>
+    <div id="minimize_button" onclick="minimize()">
+      Minimize
+    </div>
+    <!-- <span id="framespan"> -->
+      <iframe id="code_frame" src="./try_main.htm"></iframe>
+    <!-- </span> -->
   </div>
   <div id="wrapper">
     <div id="header">

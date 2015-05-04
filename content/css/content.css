@@ -239,16 +239,41 @@ ul.navigation a:hover {
   font-size: 14px;
 }
 
-/* Input code */
-#input_code {
-  width: 100%;
+/* Try code */
+#trycode {
+  position: fixed;
+  bottom: 0;
+  right: 10px;
+  border: 2px solid rgb(135,49,20);
+  border-radius: 5px;
+  padding: 5px;
+  width: 220px;
+  height: 40px;
+  background: #fff;
 }
-#input_code form textarea {
-  resize: none;
-  width: 100%;
+#trycode p {
+  text-align: center;
+  font-size: 20px;
+  font-style: oblique;
+  font-family: "consolas", monospace;
 }
-
-/* Output code */
-#output_code {
-
+#trycode #code_frame {
+  visibility: hidden;
+  width: 95%;
+  height: 80%;
+}
+#trycode #minimize_button {
+  font-family: "consolas", monospace;
+  font-size: 12px;
+  color: #86A6A6;
+  position: absolute;
+  right: 30px;
+  top: 5px;
+  width: 30px;
+  height: 12px;
+  visibility: hidden;
+}
+#trycode #minimize_button:hover {
+  text-decoration: underline;
+  cursor: pointer;
 }
